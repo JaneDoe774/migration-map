@@ -13,6 +13,18 @@ output.innerHTML = slider.value;
 
 
 
+// fetch JSON
+
+fetch('/data/migration.json')
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    appendData(data);
+  })
+  .catch(function (err) {
+    console.log(err);
+  });
 
 
 
