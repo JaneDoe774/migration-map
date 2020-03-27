@@ -15,7 +15,7 @@ output.innerHTML = slider.value;
 
 // fetch JSON
 
-$.getJSON('/data/migration.json',function(data){
+$.getJSON('https://janedoe774.github.io/migration-map/data/migration.json',function(data){
 console.log(data);
 var output = '<ul>';
 $.each(data, function(key,val){
