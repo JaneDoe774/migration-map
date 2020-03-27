@@ -1,7 +1,7 @@
-var script = document.createElement('script');
-script.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
-script.type = 'text/javascript';
-document.getElementsByTagName('head')[0].appendChild(script);
+// var script = document.createElement('script');
+// script.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
+// script.type = 'text/javascript';
+// document.getElementsByTagName('head')[0].appendChild(script);
 
 
 // Slider data
@@ -15,17 +15,15 @@ output.innerHTML = slider.value;
 
 // fetch JSON
 
-fetch('/data/migration.json')
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    appendData(data);
-  })
-  .catch(function (err) {
-    console.log(err);
-  });
-
+$.getJSON('/data/migration.json',function(data){
+console.log(data);
+var output = '<ul>';
+$.each(data, function(key,val){
+  output += '<li>'+ val.name + " " + val.year+ '</li>';
+});
+output += '</ul>';
+$('#update').html(output);
+});
 
 
 
