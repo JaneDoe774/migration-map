@@ -12,5 +12,11 @@
     "year" : "0042",
     "from" : "Asia",
     "to" : "Europe"
+  },
+  {
+    "name": "Alüre",
+    "year" : "2020",
+    "from" : "Corona",
+    "to" : "Leipzig"
   }
 ]
