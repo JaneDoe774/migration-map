@@ -19,7 +19,7 @@ $.getJSON('/data/migration.json',function(data){
 console.log(data);
 var output = '<ul>';
 $.each(data, function(key,val){
-  output += '<li>'+ val.name + " " + val.year+ '</li>';
+  output += '<li>'+ val.name + " " + val.year+ " " + val.from+ " " + val.to+'</li>';
 });
 output += '</ul>';
 $('#update').html(output);
