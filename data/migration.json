@@ -32,7 +32,7 @@
         "properties": {
             "name": "Saxony",
             "amenity": "State",
-            "popupContent": "This is where we live!",
+            "popupContent": "This is where we live!"
 
         },
         "geometry": {
