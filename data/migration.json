@@ -3,7 +3,8 @@
   {
     "name": "ALF",
     "migration" : true,
-    "year" : "1955",
+    "startyear" : "1955",
+    "endyear" : "1960",
     "from" : "Melmac",
     "to" : "Earth",
     "headline" : "This is ALF",
@@ -12,7 +13,8 @@
   {
     "name": "Djingis Khan",
     "migration" : true,
-    "year" : "0042",
+    "startyear" : "0042",
+    "endyear" : "0070",
     "from" : "Asia",
     "to" : "Europe",
     "headline" : "This is Someone",
@@ -21,7 +23,8 @@
   {
     "name": "Alüre",
     "migration" : true,
-    "year" : "2020",
+    "startyear" : "2020",
+    "endyear" : "2022",
     "from" : "Corona",
     "to" : "Leipzig",
     "headline" : "This is something from Lisa",

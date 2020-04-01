@@ -18,7 +18,7 @@ output.innerHTML = slider.value;
 $.getJSON('https://janedoe774.github.io/migration-map/data/migration.json',function(data){
 var output = '<ul>';
 $.each(data, function(key,val){
-  output += '<li>'+ val.name + " " + val.year+ " " + val.from+ " " + val.to+'</li>';
+  output += '<li>'+ val.name + " " + val.startyear+ " " + val.from+ " " + val.to+'</li>';
 });
 output += '</ul>';
 $('#update').html(output);
